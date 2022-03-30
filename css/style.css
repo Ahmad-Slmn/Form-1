@@ -1,0 +1,97 @@
+/* Start My Frame Work */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: arial;
+    outline: none
+}
+
+:root {
+    --transition: .4s
+}
+
+/* End My Frame Work */
+
+.form-container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #3551b5), url(../image/background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.form-container form {
+    width: 90%;
+    max-width: 600px
+}
+
+.form-container form .input-grob {
+    margin-bottom: 30px;
+    position: relative
+}
+
+.form-container form .input-grob input,
+.form-container form .input-grob textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 13px;
+    resize: none
+}
+
+
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -35px;
+    font-size: 13px;
+    color: red;
+
+}
+
+
+textarea:focus ~ label,
+textarea:valid ~ label {
+    top: -35px;
+    font-size: 13px;
+    color: red
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition-duration: var(--transition)
+}
+
+.form-container form button {
+    padding: 10px 0;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer
+}
+
+.form-container form .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.form-container form .row .input-grob {
+    flex-basis: 48%
+}

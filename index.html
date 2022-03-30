@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="discription" content="js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- My Main Style-css-->
+    <link rel='stylesheet' href="css/style.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <div class="row">
+
+                <div class="input-grob">
+                    <input type="text" required id="name" >
+                    <label for="name"><i class="fas fa-user"></i> your name</label>
+                </div>
+
+                <div class="input-grob">
+                    <input type="number" required id="number" autocomplete="off">
+                    <label for="number"> <i class="fas fa-phone-square"></i> phone number</label>
+                </div>
+
+            </div>
+
+            <div class="input-grob">
+                <input type="email" required id="email" autocomplete="off">
+                <label for="email"><i class="fas fa-envelope"></i> your email</label>
+            </div>
+
+            <div class="input-grob">
+                <textarea required id="massage" rows="10"></textarea>
+                <label for="massage"> <i class="fas fa-comment"></i> your massage</label>
+            </div>
+            <button type="submit"><i class="fas fa-paper-plane"></i> submit</button>
+        </form>
+    </div>
+</body></html>
