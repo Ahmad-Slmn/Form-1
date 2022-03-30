@@ -95,3 +95,12 @@ label {
 .form-container form .row .input-grob {
     flex-basis: 48%
 }
+
+form small {
+    position: relative;
+    top: -18px;
+    left: 48%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px
+}

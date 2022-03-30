@@ -17,7 +17,7 @@
             <div class="row">
 
                 <div class="input-grob">
-                    <input type="text" required id="name" >
+                    <input type="text" required id="name">
                     <label for="name"><i class="fas fa-user"></i> your name</label>
                 </div>
 
@@ -34,10 +34,33 @@
             </div>
 
             <div class="input-grob">
-                <textarea required id="massage" rows="10"></textarea>
+                <textarea required id="massage" rows="10" maxlength="300"></textarea>
                 <label for="massage"> <i class="fas fa-comment"></i> your massage</label>
             </div>
+            <small>300</small>
             <button type="submit"><i class="fas fa-paper-plane"></i> submit</button>
         </form>
     </div>
+    <script>
+        // Count My Textarea Lengths
+        let count = document.querySelector("small")
+
+        let textarea = document.querySelector("textarea");
+
+        let max_length = textarea.getAttribute("maxlength")
+
+        textarea.oninput = function() {
+            count.innerHTML = max_length - this.value.length;
+
+            if (count.innerHTML == 0) {
+
+                count.style.color = "red";
+
+            } else if (count.innerHTML <= 150) {
+                count.style.color = "yellow"
+            } else {
+                count.style.color = "white"
+            }
+        }
+    </script>
 </body></html>
