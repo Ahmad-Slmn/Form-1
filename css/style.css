@@ -99,7 +99,7 @@ label {
 
 form small {
     display: block;
-    transform: translateY(-92%);
+    transform: translate(-8px, -14px);
     color: #fff;
     font-weight: bold;
     font-size: 15px
